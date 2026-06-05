@@ -108,9 +108,25 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Sidebar Toggle
+  // Sidebar Toggle - handles both desktop (margin-left) and mobile (max-height)
+  const isMobile = () => window.matchMedia('(max-width: 768px)').matches;
+
+  // On mobile, start with sidebar collapsed so slides have full height
+  if (isMobile()) {
+    sidebar.classList.add('collapsed');
+  }
+
   sidebarToggle.addEventListener('click', () => {
     sidebar.classList.toggle('collapsed');
+  });
+
+  // Re-apply correct default when orientation/size changes
+  window.addEventListener('resize', () => {
+    if (isMobile() && !sidebar.classList.contains('collapsed')) {
+      // don't force-collapse on resize if user opened it, respect their choice
+    } else if (!isMobile() && sidebar.classList.contains('collapsed')) {
+      // keep it collapsed on desktop too if they chose that
+    }
   });
 
   // Theme Toggle (Dark / Light)

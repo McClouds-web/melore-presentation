@@ -1433,28 +1433,51 @@ h2 {
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-  body {
+  /* KEY FIX: column direction must be on .app-container, not body */
+  .app-container {
     flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
   }
-  
+
+  /* Sidebar becomes a horizontal top strip */
   .sidebar {
     width: 100%;
     height: auto;
-    max-height: 250px;
+    max-height: 200px;
+    flex-shrink: 0;
+    border-right: none;
+    border-bottom: 1px solid var(--card-border);
+  }
+
+  /* Sidebar collapses to 0 height (not negative margin) on mobile */
+  .sidebar.collapsed {
+    margin-left: 0;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: none;
   }
 
   .sidebar-header {
-    padding: 16px;
+    padding: 12px 16px;
   }
 
   .sidebar-nav {
     display: flex;
+    flex-direction: row;
     overflow-x: auto;
-    padding: 8px 16px;
+    overflow-y: hidden;
+    padding: 6px 12px;
+    scrollbar-width: none;
+  }
+
+  .sidebar-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-item {
     width: auto;
+    flex-shrink: 0;
     padding: 8px 12px;
     white-space: nowrap;
   }
@@ -1464,12 +1487,85 @@ h2 {
     border-bottom: 3px solid var(--brand-gold);
   }
 
-  .slide {
-    padding: 24px;
+  /* Viewport must fill whatever space remains after sidebar */
+  .presentation-viewport {
+    flex: 1;
+    min-height: 0;
+    height: auto;
   }
 
-  h1 { font-size: 2.2rem; }
-  h2 { font-size: 1.8rem; }
+  /* Control bar: tighter on mobile */
+  .control-bar {
+    padding: 0 12px;
+    height: 56px;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .control-group {
+    gap: 8px;
+  }
+
+  /* Hide slide counter label text on very small screens */
+  #slide-title-display {
+    display: none;
+  }
+
+  .slides-container {
+    height: calc(100% - 56px);
+  }
+
+  .slide {
+    padding: 20px 16px;
+  }
+
+  /* Cover layout stacks on mobile */
+  .cover-layout {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .cover-badge-box {
+    width: 200px;
+    height: 200px;
+  }
+
+  .honey-drop-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .honey-drop-logo-inner {
+    width: 86px;
+    height: 86px;
+  }
+
+  .honey-drop-logo-inner span {
+    font-size: 2.5rem;
+  }
+
+  .cover-title-brand {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  h1 { font-size: clamp(1.8rem, 6vw, 2.4rem); }
+  h2 { font-size: clamp(1.4rem, 5vw, 1.8rem); }
+
+  /* Grid snaps to single column on mobile */
+  .slide-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2col {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* Competitor matrix: shrink height */
+  .matrix-container {
+    height: 260px;
+  }
 }
 
 /* Print Styles for PDF Export */
