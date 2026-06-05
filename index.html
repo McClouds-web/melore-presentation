@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MELORÉ - Brand Identity & Go-To-Market Strategy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-container">
+          <div class="logo-icon"></div>
+          <span class="logo-text">MELORÉ</span>
+        </div>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="nav-item active" data-slide="0">
+          <span class="nav-num">01</span> Cover & Introduction
+        </li>
+        <li class="nav-item" data-slide="1">
+          <span class="nav-num">02</span> Brand Naming
+        </li>
+        <li class="nav-item" data-slide="2">
+          <span class="nav-num">03</span> Brand Story & Mission
+        </li>
+        <li class="nav-item" data-slide="3">
+          <span class="nav-num">04</span> Visual Identity
+        </li>
+        <li class="nav-item" data-slide="4">
+          <span class="nav-num">05</span> Zimbabwe Market Analysis
+        </li>
+        <li class="nav-item" data-slide="5">
+          <span class="nav-num">06</span> Competitor Matrix
+        </li>
+        <li class="nav-item" data-slide="6">
+          <span class="nav-num">07</span> Target Persona: Tanya
+        </li>
+        <li class="nav-item" data-slide="7">
+          <span class="nav-num">08</span> Target Persona: Chido
+        </li>
+        <li class="nav-item" data-slide="8">
+          <span class="nav-num">09</span> SWOT Analysis
+        </li>
+        <li class="nav-item" data-slide="9">
+          <span class="nav-num">10</span> Product Roadmap
+        </li>
+        <li class="nav-item" data-slide="10">
+          <span class="nav-num">11</span> Pricing Strategy
+        </li>
+        <li class="nav-item" data-slide="11">
+          <span class="nav-num">12</span> Distribution Strategy
+        </li>
+        <li class="nav-item" data-slide="12">
+          <span class="nav-num">13</span> Social Media Channels
+        </li>
+        <li class="nav-item" data-slide="13">
+          <span class="nav-num">14</span> Influencer & UGC
+        </li>
+        <li class="nav-item" data-slide="14">
+          <span class="nav-num">15</span> Launch Campaign
+        </li>
+        <li class="nav-item" data-slide="15">
+          <span class="nav-num">16</span> 90-Day GTM Checklist
+        </li>
+        <li class="nav-item" data-slide="16">
+          <span class="nav-num">17</span> Interactive Calculator
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Main Viewport -->
+    <main class="presentation-viewport">
+      
+      <!-- Control Bar -->
+      <nav class="control-bar">
+        <div class="control-group">
+          <button class="btn sidebar-toggle" id="sidebar-toggle" aria-label="Toggle Navigation Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
+          <span id="slide-title-display" style="font-weight: 500; font-size: 0.9rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--brand-bronze);">Cover & Introduction</span>
+        </div>
+
+        <div class="control-group">
+          <button class="btn theme-toggle" id="theme-toggle" aria-label="Toggle Color Theme">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          </button>
+          <button class="btn" id="btn-prev" disabled>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg> Previous
+          </button>
+          <span id="slide-counter" style="font-size: 0.85rem; font-weight: 600; min-width: 45px; text-align: center;">1 / 17</span>
+          <button class="btn btn-primary" id="btn-next">
+            Next <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+      </nav>
+
+      <!-- Slides Container -->
+      <div class="slides-container" id="slides-container">
+        
+        <!-- Slide 1: Cover Page -->
+        <section class="slide active" id="slide-0">
+          <div class="cover-layout">
+            <div class="cover-text">
+              <span class="cover-subtitle">Brand Book & GTM Strategy</span>
+              <h1 class="cover-title-brand">MELORÉ</h1>
+              <p class="cover-description">"Your Glow, Your Gold"</p>
+              <div class="cover-meta">
+                <p><strong>Prepared for:</strong> Melisa</p>
+                <p><strong>Market Focus:</strong> Zimbabwe & SADC Region</p>
+                <p><strong>Date:</strong> June 2026</p>
+              </div>
+            </div>
+            <div class="cover-visual">
+              <div class="honeycomb-grid-bg"></div>
+              <div class="cover-badge-box">
+                <div class="honey-drop-logo">
+                  <div class="honey-drop-logo-inner">
+                    <span>M</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 2: Brand Naming -->
+        <section class="slide" id="slide-1">
+          <h2>Brand Name Philosophy</h2>
+          <div class="slide-grid">
+            <div class="glass-card">
+              <h3 style="color: var(--brand-gold); font-size: 2rem; margin-bottom: 15px;">MELORÉ</h3>
+              <p style="font-style: italic; margin-bottom: 20px; font-weight: 500;">Pronunciation: Meh-loh-RAY</p>
+              <p>Derived from the Greek/Latin word <em>mel</em> (honey), which is a subtle nod to the founder’s name, Melisa. Honey has been a powerhouse beauty and skin-healing ingredient for centuries - the brand story writes itself naturally.</p>
+            </div>
+            <div class="glass-card">
+              <h3 style="margin-bottom: 15px;">Why It Works</h3>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+                <li style="display: flex; gap: 10px; align-items: flex-start;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-gold)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Sounds premium and international.</li>
+                <li style="display: flex; gap: 10px; align-items: flex-start;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-gold)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Easy to pronounce across Shona, Ndebele, and English.</li>
+                <li style="display: flex; gap: 10px; align-items: flex-start;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-gold)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> High brand-extension potential (makeup, fragrance, hair).</li>
+                <li style="display: flex; gap: 10px; align-items: flex-start;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--brand-gold)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> Instagram handle and clean domain available.</li>
+              </ul>
+            </div>
+            <div class="glass-card">
+              <h3 style="margin-bottom: 15px;">Reserve Options</h3>
+              <p style="margin-bottom: 15px; opacity: 0.8;">Alternative names held in reserve for future product lines or secondary branding:</p>
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--card-border); padding-bottom: 6px;">
+                  <strong>Mellūra</strong> <span>Soft & feminine</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--card-border); padding-bottom: 6px;">
+                  <strong>Aurmel</strong> <span>Gold + Honey (abstract)</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding-bottom: 6px;">
+                  <strong>Velōra</strong> <span>High-end luxury</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 3: Brand Story & Values -->
+        <section class="slide" id="slide-2">
+          <h2>Brand Narrative & Values</h2>
+          <div class="tabs-container">
+            <div class="tab-buttons">
+              <button class="tab-btn active" onclick="switchTab(event, 'story')">The Story</button>
+              <button class="tab-btn" onclick="switchTab(event, 'mission')">Mission & Vision</button>
+              <button class="tab-btn" onclick="switchTab(event, 'values')">Core Values</button>
+              <button class="tab-btn" onclick="switchTab(event, 'personality')">Brand Persona</button>
+            </div>
+            
+            <div id="story" class="tab-content active">
+              <div class="glass-card" style="padding: 40px; text-align: center; max-width: 800px; margin: 0 auto;">
+                <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; line-height: 1.5; font-style: italic; color: var(--brand-bronze); margin-bottom: 24px;">
+                  "Every woman carries gold within her. Meloré was born from the belief that beauty is not something you apply - it is something you reveal. Like honey, pure and golden, drawn from nature and refined with care, Meloré exists to help every Zimbabwean woman uncover her most luminous self."
+                </p>
+                <span style="font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; font-size: 0.85rem; color: var(--brand-gold);">Recommended Tagline: Your Glow, Your Gold</span>
+              </div>
+            </div>
+
+            <div id="mission" class="tab-content">
+              <div class="slide-grid">
+                <div class="glass-card">
+                  <h3 style="color: var(--brand-gold); margin-bottom: 12px;">Our Mission</h3>
+                  <p>To create effective, clean cosmetics that celebrate and enhance the natural beauty of African women - products made with intention, not imitation. Formulating specifically for regional skin needs rather than adapting standard Western chemicals.</p>
+                </div>
+                <div class="glass-card">
+                  <h3 style="color: var(--brand-gold); margin-bottom: 12px;">Our Vision</h3>
+                  <p>To become Zimbabwe's most beloved homegrown cosmetic brand, and a recognized African beauty brand across the SADC region by 2029. Setting the bar for quality, sustainability, and authentic African representations of luxury.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="values" class="tab-content">
+              <div class="slide-grid" style="grid-template-columns: repeat(4, 1fr);">
+                <div class="glass-card" style="padding: 20px;">
+                  <h4 style="color: var(--brand-gold); margin-bottom: 8px;">Authenticity</h4>
+                  <p style="font-size: 0.8rem;">Real local ingredients, verified results, and an open founder narrative.</p>
+                </div>
+                <div class="glass-card" style="padding: 20px;">
+                  <h4 style="color: var(--brand-gold); margin-bottom: 8px;">Inclusivity</h4>
+                  <p style="font-size: 0.8rem;">Formulated from scratch for African skin tones, skin sensitivities, and climate conditions.</p>
+                </div>
+                <div class="glass-card" style="padding: 20px;">
+                  <h4 style="color: var(--brand-gold); margin-bottom: 8px;">Quality</h4>
+                  <p style="font-size: 0.8rem;">Premium packaging, refined textures, and reliable performance at an accessible price point.</p>
+                </div>
+                <div class="glass-card" style="padding: 20px;">
+                  <h4 style="color: var(--brand-gold); margin-bottom: 8px;">Community</h4>
+                  <p style="font-size: 0.8rem;">Co-created with and for Zimbabwean women through direct feedback loops.</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="personality" class="tab-content">
+              <div class="glass-card" style="max-width: 600px; margin: 0 auto;">
+                <h3 style="margin-bottom: 16px;">Warm, Confident, & Sophisticated</h3>
+                <p style="margin-bottom: 16px;">Meloré is proudly African and does not feel the need to mimic Western concepts. It empowers women without being preachy or clinical. Imagine the trusted, stylish friend who always looks glowing and is happy to share her beauty secrets with you.</p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                  <span style="background: rgba(201, 168, 76, 0.1); border: 1px solid var(--brand-gold); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Warmly Inviting</span>
+                  <span style="background: rgba(201, 168, 76, 0.1); border: 1px solid var(--brand-gold); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Unapologetically Radiant</span>
+                  <span style="background: rgba(201, 168, 76, 0.1); border: 1px solid var(--brand-gold); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Locally Rooted</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Slide 4: Visual Identity -->
+        <section class="slide" id="slide-3">
+          <h2>Visual Identity System</h2>
+          <div class="grid-2col">
+            <div>
+              <h3 style="margin-bottom: 12px;">Color Palette</h3>
+              <p style="font-size: 0.85rem; margin-bottom: 16px; opacity: 0.8;">Curated tones that complement African skin beautifully. Click any swatch to copy the hex code:</p>
+              <div class="palette-grid">
+                <div class="swatch-card" onclick="copyHex('#C9A84C', this)">
+                  <div class="swatch-color" style="background-color: #C9A84C;"></div>
+                  <span class="swatch-name">Warm Gold</span>
+                  <span class="swatch-hex">#C9A84C</span>
+                  <span class="swatch-desc">Logos, primary accents</span>
+                </div>
+                <div class="swatch-card" onclick="copyHex('#8B5E3C', this)">
+                  <div class="swatch-color" style="background-color: #8B5E3C;"></div>
+                  <span class="swatch-name">Deep Bronze</span>
+                  <span class="swatch-hex">#8B5E3C</span>
+                  <span class="swatch-desc">Grounding text/borders</span>
+                </div>
+                <div class="swatch-card light-swatch" onclick="copyHex('#F5EFE0', this)">
+                  <div class="swatch-color" style="background-color: #F5EFE0;"></div>
+                  <span class="swatch-name">Ivory Cream</span>
+                  <span class="swatch-hex">#F5EFE0</span>
+                  <span class="swatch-desc">Backgrounds, base color</span>
+                </div>
+                <div class="swatch-card" onclick="copyHex('#D4977A', this)">
+                  <div class="swatch-color" style="background-color: #D4977A;"></div>
+                  <span class="swatch-name">Dusty Rose</span>
+                  <span class="swatch-hex">#D4977A</span>
+                  <span class="swatch-desc">Lip tones, campaigns</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card">
+              <h3 style="margin-bottom: 16px;">Typography & Packaging</h3>
+              <div style="margin-bottom: 20px;">
+                <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; letter-spacing: 0.1em; margin-bottom: 4px;">Cormorant Garamond</h4>
+                <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: 12px;">Headline Font (Wordmark & Headlines)</p>
+                
+                <h4 style="font-family: 'Montserrat', sans-serif; font-size: 1.1rem; font-weight: 400; margin-bottom: 4px;">Montserrat Light / Regular</h4>
+                <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary);">Body Font (Packaging details, website, copy)</p>
+              </div>
+              <div style="border-top: 1px solid var(--card-border); padding-top: 16px;">
+                <p style="font-size: 0.85rem;"><strong>Packaging Direction:</strong> Matte frosted glass jars, matte recycled cream cardboard, and gold-foiled text overlays. Includes a small monogram embossed cap and "Crafted in Zimbabwe" mark.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 5: Zimbabwe Market Analysis -->
+        <section class="slide" id="slide-4">
+          <h2>Zimbabwe Cosmetic Market</h2>
+          <div class="grid-2col">
+            <div class="glass-card">
+              <h3 style="margin-bottom: 16px;">Market Summary</h3>
+              <ul style="display: flex; flex-direction: column; gap: 12px; list-style: none;">
+                <li style="font-size: 0.85rem;"><strong>Market Size:</strong> Estimated at <strong>USD 120M – 160M annually</strong>.</li>
+                <li style="font-size: 0.85rem;"><strong>Growth Velocity:</strong> Robust <strong>8% – 12% annual growth</strong>, driven by rapid urbanization and rising youth/middle-class beauty expenditure.</li>
+                <li style="font-size: 0.85rem;"><strong>Key Driver:</strong> High demand for skin-evening and natural melanin-flattering formulations. SPF awareness is growing rapidly among urban shoppers.</li>
+                <li style="font-size: 0.85rem;"><strong>The Gap:</strong> Under-served mid-market tier (USD 10–20). Local buyers are currently stuck with expensive US/EU imports or cheap, unbranded counterfeits.</li>
+              </ul>
+            </div>
+
+            <div class="chart-container glass-card">
+              <h3 style="font-size: 1.2rem; margin-bottom: 16px; color: var(--brand-bronze);">Regional Beauty Import Share</h3>
+              <svg class="chart-svg" viewBox="0 0 400 220">
+                <!-- Grid Lines -->
+                <line x1="50" y1="20" x2="350" y2="20" stroke="rgba(139, 94, 60, 0.15)" stroke-width="1"></line>
+                <line x1="50" y1="70" x2="350" y2="70" stroke="rgba(139, 94, 60, 0.15)" stroke-width="1"></line>
+                <line x1="50" y1="120" x2="350" y2="120" stroke="rgba(139, 94, 60, 0.15)" stroke-width="1"></line>
+                <line x1="50" y1="170" x2="350" y2="170" stroke="rgba(139, 94, 60, 0.15)" stroke-width="1"></line>
+                
+                <!-- Bars (Animation will be controlled in JS or CSS) -->
+                <rect x="70" y="50" width="45" height="120" class="chart-bar" rx="3"></rect>
+                <rect x="150" y="90" width="45" height="80" class="chart-bar" rx="3" style="fill: var(--brand-dusty-rose);"></rect>
+                <rect x="230" y="110" width="45" height="60" class="chart-bar" rx="3" style="fill: var(--brand-bronze);"></rect>
+                <rect x="310" y="140" width="45" height="30" class="chart-bar" rx="3"></rect>
+                
+                <!-- Y Axis Labels -->
+                <text x="35" y="24" class="chart-text">80%</text>
+                <text x="35" y="74" class="chart-text">50%</text>
+                <text x="35" y="124" class="chart-text">30%</text>
+                <text x="35" y="174" class="chart-text">0%</text>
+
+                <!-- X Axis Labels -->
+                <text x="75" y="195" class="chart-text" font-weight="600">S. Africa</text>
+                <text x="160" y="195" class="chart-text" font-weight="600">China</text>
+                <text x="240" y="195" class="chart-text" font-weight="600">Europe</text>
+                <text x="315" y="195" class="chart-text" font-weight="600">Local (Zim)</text>
+              </svg>
+              <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 10px; font-weight: 500;">Zimbabwe depends on imports, showing a strong market gap for local premium brands.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 6: Competitor Matrix -->
+        <section class="slide" id="slide-5">
+          <h2>Competitive Positioning Matrix</h2>
+          <div class="grid-2col" style="grid-template-columns: 1fr 1.2fr;">
+            <div class="glass-card">
+              <h3 style="margin-bottom: 12px;">Competitive Positioning</h3>
+              <p style="font-size: 0.85rem; margin-bottom: 12px;"><strong>Meloré Price-Quality Advantage:</strong></p>
+              <ul style="font-size: 0.85rem; display: flex; flex-direction: column; gap: 8px; list-style: none;">
+                <li style="position: relative; padding-left: 16px;"><span style="position: absolute; left: 0; color: var(--brand-gold);">✦</span> Priced 10-20% below premium US/EU imports like Black Opal & Sleek.</li>
+                <li style="position: relative; padding-left: 16px;"><span style="position: absolute; left: 0; color: var(--brand-gold);">✦</span> Brand perception and storytelling leaps ahead of cheap generic imports.</li>
+                <li style="position: relative; padding-left: 16px;"><span style="position: absolute; left: 0; color: var(--brand-gold);">✦</span> First cosmetic brand in Zimbabwe centering around the organic honey storytelling hook.</li>
+              </ul>
+            </div>
+            
+            <div class="glass-card" style="padding: 15px 30px;">
+              <h3 style="font-size: 1.1rem; text-align: center; color: var(--brand-bronze);">Positioning Graph</h3>
+              <div class="matrix-container">
+                <!-- Center Axes Lines -->
+                <div class="matrix-axis-line-x"></div>
+                <div class="matrix-axis-line-y"></div>
+                
+                <!-- Axis End Tags -->
+                <div class="matrix-axis-label axis-top">Premium Price</div>
+                <div class="matrix-axis-label axis-bottom">Accessible Price</div>
+                <div class="matrix-axis-label axis-left">Global / Import</div>
+                <div class="matrix-axis-label axis-right">Zimbabwean / Local</div>
+
+                <!-- Quadrant Labels -->
+                <div class="quadrant-label quad-tl">Global Prestige</div>
+                <div class="quadrant-label quad-tr">Homegrown Luxury</div>
+                <div class="quadrant-label quad-bl">Mass Market Imports</div>
+                <div class="quadrant-label quad-br">Homegrown Value</div>
+
+                <!-- Competitors plotted -->
+                <div class="competitor-dot foreign" style="left: 20%; top: 20%;">Black Opal</div>
+                <div class="competitor-dot foreign" style="left: 28%; top: 28%;">Sleek</div>
+                <div class="competitor-dot foreign" style="left: 15%; top: 40%;">NYX</div>
+                <div class="competitor-dot foreign" style="left: 35%; top: 60%;">Revlon / Maybelline</div>
+                <div class="competitor-dot foreign" style="left: 45%; top: 78%;">SA Brands</div>
+                <div class="competitor-dot foreign" style="left: 62%; top: 45%;">Zaron (NGA)</div>
+                <div class="competitor-dot foreign" style="left: 80%; top: 88%;">Generics</div>
+                <div class="competitor-dot melore" style="left: 85%; top: 62%;">MELORÉ</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 7: Target Persona: Tanya -->
+        <section class="slide" id="slide-6">
+          <h2>Target Persona: The Professional</h2>
+          <div class="glass-card" style="padding: 40px;">
+            <div class="persona-card">
+              <div class="persona-img-container">
+                <img src="assets/persona_tanya.png" alt="Tanya - The Aspiring Professional" class="persona-img">
+              </div>
+              <div class="persona-details">
+                <span style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brand-gold); font-weight: 600;">Primary Target Profile</span>
+                <h3 style="font-size: 2.2rem; margin: 4px 0 8px;">Tanya, 28</h3>
+                <p style="font-weight: 500; font-size: 0.9rem; color: var(--brand-bronze);">The Aspiring Corporate Professional | Harare / Bulawayo</p>
+                
+                <p class="persona-quote">
+                  "I want to look professional, polished and glowing at work, without having to spend a fortune on imported makeup brands that weren't even formulated for my skin tone."
+                </p>
+
+                <div class="persona-stats">
+                  <div class="stat-item"><span>Monthly Income:</span> USD 400 - 1,200</div>
+                  <div class="stat-item"><span>Core Socials:</span> Instagram, Facebook, WhatsApp</div>
+                  <div class="stat-item"><span>Beauty Goal:</span> Flawless skin-evening, long wear</div>
+                  <div class="stat-item"><span>Pain Point:</span> Inconsistent shades, expensive imports</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 8: Target Persona: Chido -->
+        <section class="slide" id="slide-7">
+          <h2>Target Persona: The Trendsetter</h2>
+          <div class="glass-card" style="padding: 40px;">
+            <div class="persona-card">
+              <div class="persona-img-container">
+                <img src="assets/persona_chido.png" alt="Chido - Gen Z Trendsetter" class="persona-img">
+              </div>
+              <div class="persona-details">
+                <span style="font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brand-gold); font-weight: 600;">Secondary Target Profile</span>
+                <h3 style="font-size: 2.2rem; margin: 4px 0 8px;">Chido, 21</h3>
+                <p style="font-weight: 500; font-size: 0.9rem; color: var(--brand-bronze);">The Gen Z Content Creator & Student | Campus Towns</p>
+                
+                <p class="persona-quote">
+                  "I want clean, aesthetic products that look beautiful on my dresser, actually work on my skin, and are priced reasonably enough to buy with my side-hustle earnings."
+                </p>
+
+                <div class="persona-stats">
+                  <div class="stat-item"><span>Monthly Allowance:</span> USD 50 - 300</div>
+                  <div class="stat-item"><span>Core Socials:</span> TikTok, Instagram, WhatsApp</div>
+                  <div class="stat-item"><span>Beauty Goal:</span> Natural dewy skin, glossy lips, aesthetic shelfies</div>
+                  <div class="stat-item"><span>Pain Point:</span> Skin breakout products, harsh chemical bases</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 9: SWOT Analysis -->
+        <section class="slide" id="slide-8">
+          <h2>SWOT Analysis</h2>
+          <div class="swot-grid">
+            <div class="glass-card swot-card swot-s">
+              <h3>Strengths</h3>
+              <ul>
+                <li>Authentic local founder connection</li>
+                <li>Honey & native oils storytelling</li>
+                <li>Lower overhead than global importers</li>
+                <li>Agile, direct-to-consumer delivery</li>
+              </ul>
+            </div>
+            
+            <div class="glass-card swot-card swot-w">
+              <h3>Weaknesses</h3>
+              <ul>
+                <li>Zero initial brand recognition</li>
+                <li>Limited startup marketing budgets</li>
+                <li>Outsourced contract formulation</li>
+                <li>No formal retail footprint on day one</li>
+              </ul>
+            </div>
+            
+            <div class="glass-card swot-card swot-o">
+              <h3>Opportunities</h3>
+              <ul>
+                <li>"Buy Zimbabwean" pride trend</li>
+                <li>Booming beauty micro-influencer economy</li>
+                <li>Premium SADC expansion (Zambia, Botswana)</li>
+                <li>Refillable & eco-luxe product positioning</li>
+              </ul>
+            </div>
+            
+            <div class="glass-card swot-card swot-t">
+              <h3>Threats</h3>
+              <ul>
+                <li>Established players launching budget lines</li>
+                <li>Raw materials supply chain import bottlenecks</li>
+                <li>Market flooding of counterfeit products</li>
+                <li>Macroeconomic currency rate shifts (USD/ZiG)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 10: Product Roadmap -->
+        <section class="slide" id="slide-9">
+          <h2>Product Launch Timeline</h2>
+          <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+            <button class="btn btn-primary" onclick="filterProducts('p1')">Phase 1: Core 5</button>
+            <button class="btn" onclick="filterProducts('p2')">Phase 2: Months 4-8</button>
+            <button class="btn" onclick="filterProducts('p3')">Phase 3: Year 2+</button>
+          </div>
+
+          <div class="carousel-wrapper">
+            <div class="product-carousel" id="product-carousel">
+              
+              <!-- Product 1 -->
+              <div class="glass-card product-card p1-prod">
+                <div class="product-img-box">
+                  <div class="product-badge">HERO PRODUCT</div>
+                  <img src="assets/product_mockup.png" alt="Honey-Glow Moisturizer" class="product-img">
+                </div>
+                <div>
+                  <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 4px;">Honey-Glow Moisturizer</h4>
+                  <p style="font-size: 0.75rem; opacity: 0.85;">Marula oil, honey extract, niacinamide, optional SPF15. Universal tone glow base.</p>
+                  <p class="product-price">USD 14</p>
+                </div>
+              </div>
+
+              <!-- Product 2 -->
+              <div class="glass-card product-card p1-prod">
+                <div class="product-img-box">
+                  <div class="product-badge" style="background-color: var(--brand-dusty-rose);">LAUNCH</div>
+                  <div style="width:100%; height:100%; background: linear-gradient(135deg, #ECC8B5, #D4977A); display: flex; align-items:center; justify-content:center; color:#FFF; font-weight:600;">LIPS</div>
+                </div>
+                <div>
+                  <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 4px;">Honey-Infused Lip Gloss</h4>
+                  <p style="font-size: 0.75rem; opacity: 0.85;">Non-sticky formula in 4 African-specific warm nude and coral shades.</p>
+                  <p class="product-price">USD 8</p>
+                </div>
+              </div>
+
+              <!-- Product 3 -->
+              <div class="glass-card product-card p1-prod">
+                <div class="product-img-box">
+                  <div class="product-badge" style="background-color: var(--brand-bronze);">POPULAR</div>
+                  <div style="width:100%; height:100%; background: linear-gradient(135deg, #F9D079, #C9A84C); display: flex; align-items:center; justify-content:center; color:#FFF; font-weight:600;">SERUM</div>
+                </div>
+                <div>
+                  <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 4px;">Even-Glow Serum</h4>
+                  <p style="font-size: 0.75rem; opacity: 0.85;">Vitamin C + Honey compound. Targets pigmentation and evens skin tone.</p>
+                  <p class="product-price">USD 18</p>
+                </div>
+              </div>
+
+              <!-- Product 4 -->
+              <div class="glass-card product-card p1-prod">
+                <div class="product-img-box">
+                  <div style="width:100%; height:100%; background: linear-gradient(135deg, #FAF4E5, #ECE0C1); display: flex; align-items:center; justify-content:center; color:var(--brand-bronze); font-weight:600;">PRIMER</div>
+                </div>
+                <div>
+                  <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 4px;">Illuminating Primer</h4>
+                  <p style="font-size: 0.75rem; opacity: 0.85;">Golden micro-shimmer prep base to extend cosmetic wear-time.</p>
+                  <p class="product-price">USD 14</p>
+                </div>
+              </div>
+
+              <!-- Product 5 -->
+              <div class="glass-card product-card p1-prod">
+                <div class="product-img-box">
+                  <div style="width:100%; height:100%; background: linear-gradient(135deg, #CFB59B, #8B5E3C); display: flex; align-items:center; justify-content:center; color:#FFF; font-weight:600;">COMPLEXION</div>
+                </div>
+                <div>
+                  <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 4px;">Tinted Moisturizer</h4>
+                  <p style="font-size: 0.75rem; opacity: 0.85;">Lightweight, breathable base in 6 African skin shade tones.</p>
+                  <p class="product-price">USD 14</p>
+                </div>
+              </div>
+
+              <!-- Phase 2 Mock Products -->
+              <div class="glass-card product-card p2-prod" style="display:none;">
+                <div class="product-img-box">
+                  <div class="product-badge" style="background-color: var(--brand-bronze);">PHASE 2</div>
+                  <div style="width:100%; height:100%; background: #333; display: flex; align-items:center; justify-content:center; color:#FFF; font-weight:600;">COMPLEXION</div>
+                </div>
+                <div>
+                  <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 4px;">Full Foundation Line</h4>
+                  <p style="font-size: 0.75rem; opacity: 0.85;">12+ melanin shades, custom long-wear formula.</p>
+                  <p class="product-price">USD 18</p>
+                </div>
+              </div>
+              
+              <div class="glass-card product-card p2-prod" style="display:none;">
+                <div class="product-img-box">
+                  <div class="product-badge" style="background-color: var(--brand-bronze);">PHASE 2</div>
+                  <div style="width:100%; height:100%; background: #333; display: flex; align-items:center; justify-content:center; color:#FFF; font-weight:600;">EYES</div>
+                </div>
+                <div>
+                  <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 4px;">Eyeshadow Palettes</h4>
+                  <p style="font-size: 0.75rem; opacity: 0.85;">Warm matte & gold foil metallics, high pigment.</p>
+                  <p class="product-price">USD 22</p>
+                </div>
+              </div>
+
+              <!-- Phase 3 Mock Products -->
+              <div class="glass-card product-card p3-prod" style="display:none;">
+                <div class="product-img-box">
+                  <div class="product-badge" style="background-color: var(--brand-gold);">PHASE 3</div>
+                  <div style="width:100%; height:100%; background: #222; display: flex; align-items:center; justify-content:center; color:#FFF; font-weight:600;">FRAGRANCE</div>
+                </div>
+                <div>
+                  <h4 style="font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; margin-bottom: 4px;">Signature Scent</h4>
+                  <p style="font-size: 0.75rem; opacity: 0.85;">Amber, honey, marula blossom fragrance line.</p>
+                  <p class="product-price">USD 35</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 11: Pricing Strategy -->
+        <section class="slide" id="slide-10">
+          <h2>Pricing Strategy</h2>
+          <div class="pricing-grid">
+            <div class="glass-card price-card">
+              <span style="font-size: 0.7rem; font-weight: 600; color: var(--brand-gold); text-transform: uppercase;">Entry Tier</span>
+              <h3 class="price-tier-title">USD 6 – 10</h3>
+              <p style="font-size: 0.8rem; font-style: italic; color: var(--text-secondary);">Hook & Trial Products</p>
+              <ul class="price-tier-features">
+                <li>Honey lip glosses</li>
+                <li>Travel-sized jars</li>
+                <li>Single-use treatment sachets</li>
+              </ul>
+              <p style="font-size: 0.75rem; opacity: 0.8;">Designed to capture impulse Gen-Z shoppers (Chido persona) and reduce friction.</p>
+            </div>
+            
+            <div class="glass-card price-card" style="border: 2px solid var(--brand-gold);">
+              <span style="font-size: 0.7rem; font-weight: 700; color: var(--brand-gold); text-transform: uppercase; background: rgba(201, 168, 76, 0.1); padding: 4px 10px; border-radius: 20px;">CORE REVENUE</span>
+              <h3 class="price-tier-title">USD 10 – 18</h3>
+              <p style="font-size: 0.8rem; font-style: italic; color: var(--text-secondary);">Daily Hydration & Prep</p>
+              <ul class="price-tier-features">
+                <li>Honey-Glow Moisturizer</li>
+                <li>Illuminating Primer</li>
+                <li>Tinted Moisturizer</li>
+              </ul>
+              <p style="font-size: 0.75rem; opacity: 0.8;">The standard choice for corporate professionals (Tanya persona). High margins.</p>
+            </div>
+            
+            <div class="glass-card price-card">
+              <span style="font-size: 0.7rem; font-weight: 600; color: var(--brand-gold); text-transform: uppercase;">Premium Tier</span>
+              <h3 class="price-tier-title">USD 18 – 28</h3>
+              <p style="font-size: 0.8rem; font-style: italic; color: var(--text-secondary);">Active Treatment & Gift Sets</p>
+              <ul class="price-tier-features">
+                <li>Even-Glow Vitamin C Serums</li>
+                <li>Signature gift baskets</li>
+                <li>Premium glass sets</li>
+              </ul>
+              <p style="font-size: 0.75rem; opacity: 0.8;">High value treatments purchased selectively or by Diaspora buyers for gifting.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 12: Distribution Strategy -->
+        <section class="slide" id="slide-11">
+          <h2>Distribution Strategy Roadmap</h2>
+          <div class="timeline">
+            
+            <div class="timeline-node">
+              <div class="timeline-circle"></div>
+              <div>
+                <h3 class="timeline-header">Priority 1: WhatsApp Commerce (Day 1)</h3>
+                <p class="timeline-desc">Build WhatsApp Business catalog. Accept EcoCash, ZIPIT, and USD cash. Delivery via Vaya Africa or DHL nationwide.</p>
+              </div>
+            </div>
+
+            <div class="timeline-node">
+              <div class="timeline-circle"></div>
+              <div>
+                <h3 class="timeline-header">Priority 2: Digital-First Social Commerce (Day 1)</h3>
+                <p class="timeline-desc">Instagram and TikTok shop redirects to direct orders. Simple messaging funnel to capture organic traffic.</p>
+              </div>
+            </div>
+
+            <div class="timeline-node">
+              <div class="timeline-circle"></div>
+              <div>
+                <h3 class="timeline-header">Priority 3: E-Commerce Storefront (Month 1-2)</h3>
+                <p class="timeline-desc">Launch optimized Shopify store. Set up local payment gateway integrations (Paynow) to support cards and mobile money.</p>
+              </div>
+            </div>
+
+            <div class="timeline-node">
+              <div class="timeline-circle"></div>
+              <div>
+                <h3 class="timeline-header">Priority 4: Salon Partnerships (Month 2-4)</h3>
+                <p class="timeline-desc">Consignment displays in 5 high-foot-traffic salons in Harare (Borrowdale, Avondale, Avenues). Staff education programs.</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Slide 13: Social Media Channels -->
+        <section class="slide" id="slide-12">
+          <h2>Social Media Plan</h2>
+          <div class="grid-2col">
+            <div class="glass-card">
+              <h3 style="margin-bottom: 12px;">Platform Mix</h3>
+              <div style="display:flex; flex-direction:column; gap:16px;">
+                <div>
+                  <strong>Instagram (Primary Channel)</strong>
+                  <p style="font-size: 0.8rem; opacity: 0.8;">Feed frequency: 4x/week. Warm gold & cream visual grid. Daily story engagement, customer Q&As.</p>
+                </div>
+                <div>
+                  <strong>TikTok (Growth Engine)</strong>
+                  <p style="font-size: 0.8rem; opacity: 0.8;">Video frequency: 5x/week. Focus on GRWM skincare routines, founder stories, and ASMR packaging reels.</p>
+                </div>
+                <div>
+                  <strong>WhatsApp Business (Sales Funnel)</strong>
+                  <p style="font-size: 0.8rem; opacity: 0.8;">Catalog sync. Automated welcoming logic. Segment customer lists by location for local delivery notifications.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-card" style="display:flex; flex-direction:column; align-items:center; justify-content:center;">
+              <h3 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--brand-bronze);">Mock Editorial Instagram Feed</h3>
+              <div class="social-grid">
+                <div class="social-post-mock">
+                  <img src="assets/product_mockup.png" alt="Insta post 1">
+                  <div class="social-post-overlay">✦ Gold Blend</div>
+                </div>
+                <div class="social-post-mock">
+                  <img src="assets/persona_tanya.png" alt="Insta post 2">
+                  <div class="social-post-overlay">✦ Glow Story</div>
+                </div>
+                <div class="social-post-mock">
+                  <img src="assets/brand_banner.png" alt="Insta post 3">
+                  <div class="social-post-overlay">✦ Pure Honey</div>
+                </div>
+                <div class="social-post-mock">
+                  <div style="width:100%; height:100%; background-color:#8B5E3C; display:flex; align-items:center; justify-content:center; color:#FFF; font-weight:600; font-size:1.5rem; font-family:'Cormorant Garamond'">MELORÉ</div>
+                  <div class="social-post-overlay">✦ Wordmark</div>
+                </div>
+                <div class="social-post-mock">
+                  <img src="assets/persona_chido.png" alt="Insta post 5">
+                  <div class="social-post-overlay">✦ GenZ Glow</div>
+                </div>
+                <div class="social-post-mock">
+                  <div style="width:100%; height:100%; background-color:#FAF6EE; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#8B5E3C; font-style:italic; font-size:0.75rem; text-align:center; padding:10px;">"Your Glow, Your Gold"</div>
+                  <div class="social-post-overlay">✦ Tagline</div>
+                </div>
+              </div>
+              <p style="font-size: 0.7rem; color: var(--text-secondary); margin-top: 10px;">Cohesive aesthetic: warm gold, cream & rose pink accents.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 14: Influencer & UGC -->
+        <section class="slide" id="slide-13">
+          <h2>Influencer & UGC Plan</h2>
+          <div class="grid-2col">
+            <div class="glass-card">
+              <h3 style="margin-bottom: 12px;">Outreach Architecture</h3>
+              <div style="display:flex; flex-direction:column; gap:16px;">
+                <div>
+                  <strong>Tier 1: Nano-Influencers (1K - 10K followers)</strong>
+                  <p style="font-size: 0.8rem; opacity:0.8;">Target 15-20 local beauty vloggers. Provide free product gifting packages in exchange for organic story shares.</p>
+                </div>
+                <div>
+                  <strong>Tier 2: Micro-Influencers (10K - 50K followers)</strong>
+                  <p style="font-size: 0.8rem; opacity:0.8;">Partner with 3-5 lifestyle creators. Compensation: USD 50-150 per dedicated product demonstration reel.</p>
+                </div>
+                <div>
+                  <strong>User-Generated Content (UGC) campaigns</strong>
+                  <p style="font-size: 0.8rem; opacity:0.8;">Encourage campaign hashtags: <span style="color:var(--brand-gold); font-weight:600;">#MyMeloréGlow</span>. Offer 10% coupon incentives on customer reposts.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="email-mockup">
+              <div class="email-header">
+                <div><span>To:</span> nano.creator@hararelifestyle.zw</div>
+                <div><span>Subject:</span> Organic honey-infused luxury for Zimbabwe's creators ✨</div>
+              </div>
+              <div class="email-body">
+                Hi,
+
+                We're launching Meloré - Zimbabwe's first honey-infused luxury cosmetic brand.
+                We'd love to send you our Honey-Glow Moisturizer to try for free.
+
+                No obligation, just share your honest experience if you love it.
+                We're building something special for Zimbabwean women and think your audience would love to be part of the journey.
+
+                Interested?
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 15: Launch Campaign -->
+        <section class="slide" id="slide-14">
+          <h2>Launch Campaign: "Born from Gold"</h2>
+          <div class="slide-grid">
+            <div class="glass-card">
+              <span style="font-size: 0.75rem; color:var(--brand-gold); font-weight:700;">PHASE 1</span>
+              <h3 style="margin: 4px 0 10px;">Pre-Launch (Weeks 1–4)</h3>
+              <p style="font-size: 0.85rem; line-height: 1.5;">Establish social grids. Secure @melore.beauty handle. Post mysterious golden honey drops graphics. Pre-gift product packages to nano-influencers with embargo requests until Launch Day.</p>
+            </div>
+            
+            <div class="glass-card" style="border: 1px solid var(--brand-gold);">
+              <span style="font-size: 0.75rem; color:var(--brand-gold); font-weight:700;">PHASE 2</span>
+              <h3 style="margin: 4px 0 10px;">Launch Day (Day 1)</h3>
+              <p style="font-size: 0.85rem; line-height: 1.5;">Coordinated posting by all gifted influencers. Live product demo on Instagram. Shopify site opens to public. Limited offer: free lip gloss for the first 50 customers to generate immediate momentum.</p>
+            </div>
+            
+            <div class="glass-card">
+              <span style="font-size: 0.75rem; color:var(--brand-gold); font-weight:700;">PHASE 3</span>
+              <h3 style="margin: 4px 0 10px;">Post-Launch (Weeks 5–12)</h3>
+              <p style="font-size: 0.85rem; line-height: 1.5;">Weekly customer reviews and before-and-after video compilations. Launch salon pop-up stores in Harare's affluent shopping centres. Tease Phase 2 serum product lineup.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 16: 90-Day GTM Checklist -->
+        <section class="slide" id="slide-15">
+          <h2>90-Day GTM Execution Checklist</h2>
+          <p style="font-size: 0.85rem; opacity: 0.8;">Track progress dynamically by ticking completed GTM setup steps:</p>
+          
+          <div class="checklist-container">
+            <div class="glass-card checklist-item checked" onclick="toggleChecklistItem(this)">
+              <div class="checklist-checkbox"></div>
+              <div class="checklist-text">
+                <div class="checklist-title">Finalize naming, domain & social handles</div>
+                <div class="checklist-desc">Secure @melore.beauty, register domain, clear local trade name files.</div>
+              </div>
+            </div>
+            
+            <div class="glass-card checklist-item checked" onclick="toggleChecklistItem(this)">
+              <div class="checklist-checkbox"></div>
+              <div class="checklist-text">
+                <div class="checklist-title">Design logo, packaging labels & brand collateral</div>
+                <div class="checklist-desc">Create monogram, layout labels with ingredient disclosures.</div>
+              </div>
+            </div>
+
+            <div class="glass-card checklist-item" onclick="toggleChecklistItem(this)">
+              <div class="checklist-checkbox"></div>
+              <div class="checklist-text">
+                <div class="checklist-title">Formulation production order (MOQ: 300 units)</div>
+                <div class="checklist-desc">Finalize sample feedback and sign off manufacturing agreement.</div>
+              </div>
+            </div>
+
+            <div class="glass-card checklist-item" onclick="toggleChecklistItem(this)">
+              <div class="checklist-checkbox"></div>
+              <div class="checklist-text">
+                <div class="checklist-title">Set up digital storefront & WhatsApp Business</div>
+                <div class="checklist-desc">Configure local currency payment gateways and upload item catalogs.</div>
+              </div>
+            </div>
+            
+            <div class="glass-card checklist-item" onclick="toggleChecklistItem(this)">
+              <div class="checklist-checkbox"></div>
+              <div class="checklist-text">
+                <div class="checklist-title">Gifting distribution to 15 nano-influencers</div>
+                <div class="checklist-desc">Pack premium unboxing tissue, ribbon, hand-written greetings, and ship.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="checklist-progress-box">
+            <span class="checklist-progress-text">Progress: <span id="checklist-pct">40%</span></span>
+            <div class="checklist-progress-bar-container">
+              <div class="checklist-progress-bar-fill" id="checklist-progress-bar-fill"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 17: Interactive Calculator -->
+        <section class="slide" id="slide-16">
+          <h2>Interactive Startup Budget Estimator</h2>
+          <p style="font-size: 0.85rem; margin-bottom: 20px; opacity: 0.8;">Adjust slider assumptions to see startup funding totals, projected revenues, and break-even sales points.</p>
+          
+          <div class="calc-container">
+            <div class="glass-card calc-inputs">
+              <!-- Slider 1 -->
+              <div class="input-slider-group">
+                <div class="input-slider-header">
+                  <span>Production Quantity (MOQ Jars)</span>
+                  <span class="input-slider-val" id="val-qty">300 units</span>
+                </div>
+                <input type="range" min="100" max="1000" value="300" step="50" class="slider-input" id="slide-qty">
+              </div>
+
+              <!-- Slider 2 -->
+              <div class="input-slider-group">
+                <div class="input-slider-header">
+                  <span>Unit Retail Price (USD)</span>
+                  <span class="input-slider-val" id="val-price">$14.00</span>
+                </div>
+                <input type="range" min="8" max="25" value="14" step="1" class="slider-input" id="slide-price">
+              </div>
+
+              <!-- Slider 3 -->
+              <div class="input-slider-group">
+                <div class="input-slider-header">
+                  <span>Marketing & Ad Spend (USD)</span>
+                  <span class="input-slider-val" id="val-marketing">$400</span>
+                </div>
+                <input type="range" min="100" max="1500" value="400" step="50" class="slider-input" id="slide-marketing">
+              </div>
+
+              <!-- Slider 4 -->
+              <div class="input-slider-group">
+                <div class="input-slider-header">
+                  <span>Packaging & Design Fee (USD)</span>
+                  <span class="input-slider-val" id="val-overhead">$1,000</span>
+                </div>
+                <input type="range" min="300" max="2500" value="1000" step="100" class="slider-input" id="slide-overhead">
+              </div>
+            </div>
+
+            <div class="calc-outputs">
+              <div class="glass-card calc-output-card">
+                <span class="calc-output-label">ESTIMATED STARTUP INVESTMENT</span>
+                <span class="calc-output-value" id="out-investment">$2,900</span>
+              </div>
+
+              <div class="glass-card calc-output-card" style="border-color: rgba(110, 144, 117, 0.4);">
+                <span class="calc-output-label">TOTAL REVENUE (QTY SOLD)</span>
+                <span class="calc-output-value" style="color: #6E9075;" id="out-revenue">$4,200</span>
+                <span class="calc-break-even" id="out-breakeven">Break-even Point: 207 units sold</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- Presentation Help / Hint -->
+    <div class="instructions-overlay">
+      ⌨ Use Left/Right Arrow keys or click Next/Previous to navigate
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
+
